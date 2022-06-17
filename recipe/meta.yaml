@@ -1,7 +1,7 @@
 {% set name = "jmespath" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "a490e280edd1f57d6de88636992d05b71e97d69a26a19f058ecf7d304474bf5e" %}
+{% set hash_val = "90261b206d6defd58fdd5e85f478bf633a2901798906be2ad389150c5c60edbe" %}
 
 package:
   name: {{ name }}
