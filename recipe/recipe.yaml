@@ -2,18 +2,15 @@ schema_version: 1
 
 context:
   name: jmespath
-  version: 1.1.0
-  bundle: tar.gz
-  hash_val: 472c87d80f36026ae83c6ddd0f1d05d4e510134ed462851fd5f754c8c3cbb88d
+  version: "1.1.0"
 
 package:
   name: ${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.${{ bundle }}
-  sha256: ${{ hash_val }}
-  file_name: ${{ name }}-${{ version }}.${{ bundle }}
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 472c87d80f36026ae83c6ddd0f1d05d4e510134ed462851fd5f754c8c3cbb88d
 
 build:
   number: 1
@@ -32,7 +29,9 @@ tests:
   - python:
       imports:
         - jmespath
+      pip_check: true
       python_version: ${{ python_min }}.*
+
 about:
   license: MIT
   license_file: LICENSE
