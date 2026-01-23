@@ -1,7 +1,7 @@
 {% set name = "jmespath" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "90261b206d6defd58fdd5e85f478bf633a2901798906be2ad389150c5c60edbe" %}
+{% set hash_val = "472c87d80f36026ae83c6ddd0f1d05d4e510134ed462851fd5f754c8c3cbb88d" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -37,7 +37,7 @@ about:
   home: https://github.com/jmespath/jmespath.py
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: JSON Matching Expressions
   dev_url: https://github.com/jmespath/jmespath.py
 
