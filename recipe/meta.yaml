@@ -37,7 +37,7 @@ about:
   home: https://github.com/jmespath/jmespath.py
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: JSON Matching Expressions
   dev_url: https://github.com/jmespath/jmespath.py
 
